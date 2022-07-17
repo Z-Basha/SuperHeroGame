@@ -5,13 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class OnClickLoader : MonoBehaviour
 {
-    public GameObject TrainingMenu;
-
+    
     public void LoadTrainingLevel()
     {
         SceneManager.LoadScene("Menus");
-        TrainingMenu.SetActive(true);
     }
-
 
 }
