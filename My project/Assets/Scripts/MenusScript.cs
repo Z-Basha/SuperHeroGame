@@ -1,26 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class MenusScript : MonoBehaviour
 {
-    public GameObject TrainingMenu;
-
-    public void SetActiveUI()
-    {
-        TrainingMenu.SetActive(true);
+    static int ACTIVE_UI = 0;
+    static int TOTAL_MENU = 4;
+    
+    public GameObject[] UIMenu = new GameObject[TOTAL_MENU];
+    public static void SetActiveUI(int UIIdx)
+    {   
+        ACTIVE_UI = UIIdx;
     }
     
-
-    // Start is called before the first frame update
-    void Start()
+    public void showUI (int UIIdx)
     {
-        SetActiveUI();
+        UIMenu[UIIdx].SetActive(true);
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        this.showUI(MenusScript.ACTIVE_UI);
+    }
+
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Escape)) {
+            SceneManager.LoadScene("HQ");
+        }
     }
 }

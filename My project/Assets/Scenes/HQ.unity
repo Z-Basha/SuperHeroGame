@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 96476452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db4d6cf7bde5db64f876888799acdd4e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b8fe7fa6d582144bbd4953c93725c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &96476455
@@ -219,13 +219,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 96476454}
-        m_TargetAssemblyTypeName: HealingLevelLoader, Assembly-CSharp
-        m_MethodName: LoadNextLevel
-        m_Mode: 1
+        m_TargetAssemblyTypeName: OnClickLoader, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 837602316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cc3a43799ceeb2419441efb718a9cea, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b8fe7fa6d582144bbd4953c93725c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &837602319
@@ -606,13 +606,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 837602318}
-        m_TargetAssemblyTypeName: WardrobeLevelLoader, Assembly-CSharp
-        m_MethodName: LoadNextLevel
-        m_Mode: 1
+        m_TargetAssemblyTypeName: OnClickLoader, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -667,7 +667,6 @@ GameObject:
   - component: {fileID: 907602573}
   - component: {fileID: 907602572}
   - component: {fileID: 907602571}
-  - component: {fileID: 907602570}
   m_Layer: 5
   m_Name: StartGame
   m_TagString: Untagged
@@ -694,18 +693,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3, y: 7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &907602570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907602568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9faefe142ac8b324faec349c91100af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &907602571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,7 +737,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 907602570}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StartGameLevelLoader, Assembly-CSharp
         m_MethodName: LoadNextLevel
         m_Mode: 1
@@ -970,7 +957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8fe7fa6d582144bbd4953c93725c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrainingMenu: {fileID: 0}
 --- !u!114 &1186300535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1017,8 +1003,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1186300534}
         m_TargetAssemblyTypeName: OnClickLoader, Assembly-CSharp
-        m_MethodName: LoadTrainingLevel
-        m_Mode: 1
+        m_MethodName: LoadMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1208,7 +1194,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2047388347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec6f300e9328aa44b43b9eb48d54042, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b8fe7fa6d582144bbd4953c93725c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2047388350
@@ -1256,13 +1242,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2047388349}
-        m_TargetAssemblyTypeName: RecruitLevelLoader, Assembly-CSharp
-        m_MethodName: LoadNextLevel
-        m_Mode: 1
+        m_TargetAssemblyTypeName: OnClickLoader, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class OnClickLoader : MonoBehaviour
 {
     
-    public void LoadTrainingLevel()
+    public void LoadMenu(int menu)
     {
+        MenusScript.SetActiveUI(menu);
         SceneManager.LoadScene("Menus");
     }
+    
 
 }
