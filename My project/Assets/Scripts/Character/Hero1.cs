@@ -8,6 +8,8 @@ public class Hero1 : HeroesAttributes
     void Start()
     {
         Attack();
+        Debug.Log(this.name);
+
     }
 
    void OnCollisionEnter(Collision collision){
@@ -20,8 +22,8 @@ public class Hero1 : HeroesAttributes
    
    
     // Update is called once per frame
-    // void Update()
-    // {
-
-    // }
+    void Update()
+    {
+        CheckOnClick();
+    }
 }
