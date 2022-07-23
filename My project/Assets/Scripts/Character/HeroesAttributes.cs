@@ -24,13 +24,19 @@ public class HeroesAttributes : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit)) {
+                // if hit any button then just do nothing
+                foreach (GameObject g in abilities) 
+                    if (hit.transform.name == g.name) 
+                        return;
+                // if hero & button is not clicked
                 if (hit.transform.name != this.name) {
                     foreach (GameObject g in abilities) 
                         g.SetActive(false);
-                } else {
-                    foreach (GameObject g in abilities)
-                        g.SetActive(true);
+                    return;
                 }
+                // if hero is clicked
+                foreach (GameObject g in abilities)
+                    g.SetActive(true);
             }
         }
     }
